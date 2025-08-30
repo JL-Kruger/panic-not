@@ -2069,3 +2069,127 @@ textarea {
     text-decoration: line-through;
     color: #9ca3af;
 }
+
+/* SPACES Framework Chart Module */
+.spaces-framework-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.spaces-framework-container * {
+    box-sizing: border-box;
+}
+
+.spaces-header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.spaces-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.spaces-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.spaces-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+@media (min-width: 768px) {
+    .spaces-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .spaces-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.spaces-item {
+    padding: 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease;
+}
+
+.spaces-item:hover {
+    background-color: #f8fafc;
+}
+
+@media (min-width: 768px) {
+    .spaces-item:nth-child(even) {
+        border-left: 1px solid #e5e7eb;
+    }
+}
+
+@media (min-width: 1024px) {
+    .spaces-item:nth-child(3n-1),
+    .spaces-item:nth-child(3n) {
+        border-left: 1px solid #e5e7eb;
+    }
+    
+    .spaces-item:nth-child(even) {
+        border-left: none;
+    }
+}
+
+.spaces-letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+.spaces-concept {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.spaces-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+.spaces-citation {
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.citation-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.citation-link:hover {
+    text-decoration: underline;
+}
